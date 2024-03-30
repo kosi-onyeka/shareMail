@@ -25,7 +25,7 @@ def sms():
         mailService.getHuluLogin()
         response = mailService.verification_code
     else:
-        response = 'Wrong request. Reach out to Kosi'
+        response = 'Wrong request. Reach out to Kosi :)'
 
     message = client.messages.create(
         body = response,
