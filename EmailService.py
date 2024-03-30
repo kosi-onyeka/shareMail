@@ -14,7 +14,7 @@ class EmailService:
         yahoo_imap_server = "imap.mail.yahoo.com"
         yahoo_imap_port = 993
         try:
-            self.mailServer = imaplib.IMAP4_SSL(yahoo_imap_server, yahoo_imap_port,)
+            self.mailServer = imaplib.IMAP4_SSL(yahoo_imap_server, yahoo_imap_port)
         except imaplib.IMAP4.error as e:
             print(f"Failed to connect to the server: {e}")
             exit()
