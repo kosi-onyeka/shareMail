@@ -10,6 +10,11 @@ client = Client(account_sid, auth_token)
 
 @app.route('/testAPI', methods=['GET'])
 def testAPI():
+    
+    return('App is currently deployed :)')
+
+@app.route('/getHulu', methods=['GET'])
+def getHulu():
     mailService = EmailService()
     mailService.getHuluLogin()
     response = mailService.verification_code
