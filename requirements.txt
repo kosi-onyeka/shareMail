@@ -1,0 +1,7 @@
+Flask==3.0.0
+Flask-RESTful==0.3.10
+html2text==2020.1.16
+python-imap==1.0.0
+requests==2.31.0
+twilio==8.10.2
+urllib3==2.0.5
